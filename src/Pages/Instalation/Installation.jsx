@@ -12,9 +12,11 @@ const Installation = () => {
 
   if (!installed.length)
     return (
-      <p className="container mx-auto text-3xl font-bold text-center mt-20">
-        No data available !
-      </p>
+      <div className="bg-gray-100 min-h-[calc(100vh-340px)]">
+        <p className="container mx-auto text-3xl font-bold text-center pt-20  ">
+          No data available !
+        </p>
+      </div>
     );
 
   const sortItem = (() => {
@@ -32,10 +34,12 @@ const Installation = () => {
       JSON.parse(localStorage.getItem("installedApps")) || [];
 
     let updatedList = existingList.filter((a) => a.id !== id);
-    //  setInstalled((prev) => prev.filter((p) => p.id !== id));
     toast.success("Removed Successfully");
-    setInstalled(updatedList);
-    localStorage.setItem("installedApps", JSON.stringify(updatedList));
+    //  setInstalled((prev) => prev.filter((p) => p.id !== id));
+    setTimeout(() => {
+      setInstalled(updatedList);
+      localStorage.setItem("installedApps", JSON.stringify(updatedList));
+    }, 700);
   };
 
   return (

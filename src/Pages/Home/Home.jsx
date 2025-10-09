@@ -6,6 +6,7 @@ import TrendingApps from "./TrendingApps";
 const Home = () => {
   const appsData = useLoaderData();
   // console.log(appsData);
+
   const trendingApps = appsData.slice(0, 8);
   return (
     <div>

@@ -7,17 +7,17 @@ const BannerCard = () => {
       <div className="flex flex-col md:flex-row  justify-around items-center gap-6 md:gap-0 mt-10 md:mt-20">
         <div>
           <h2>Total Downloads</h2>
-          <h1 className="text-5xl md:text-6xl font-extrabold">29.6M</h1>
+          <h1 className="text-5xl md:text-6xl font-extrabold my-2">29.6M</h1>
           <p>21% more than last month</p>
         </div>
         <div>
           <h2>Total Reviews</h2>
-          <h1 className="text-5xl md:text-6xl font-extrabold">906K</h1>
+          <h1 className="text-5xl md:text-6xl font-extrabold my-2">906K</h1>
           <p>46% more than last month</p>
         </div>
         <div>
           <h2>Active Apps</h2>
-          <h1 className="text-5xl md:text-6xl font-extrabold">132+</h1>
+          <h1 className="text-5xl md:text-6xl font-extrabold my-2">132+</h1>
           <p>31 more will Launch</p>
         </div>
       </div>

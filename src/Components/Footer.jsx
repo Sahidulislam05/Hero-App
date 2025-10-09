@@ -1,7 +1,15 @@
+import logo from "../assets/logo.png";
+
 const Footer = () => {
   return (
-    <div className="bg-base-300">
+    <div className="bg-base-500">
       <footer className="footer sm:footer-horizontal container mx-auto text-base-content p-10">
+        <nav className="flex justify-between items-center">
+          <img className="w-10 h-10" src={logo} alt="" />
+          <a className="link link-hover text-2xl font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">
+            HERO.IO
+          </a>
+        </nav>
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
@@ -55,6 +63,12 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
+      <h1 className="font-semibold text-center pb-5">
+        Copyright © {new Date().getFullYear()} - All right reserved by{" "}
+        <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">
+          HERO.IO
+        </span>
+      </h1>
     </div>
   );
 };

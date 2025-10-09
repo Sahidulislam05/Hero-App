@@ -30,13 +30,40 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                      : ""
+                  }
+                  to="/"
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/apps">Apps</NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                      : ""
+                  }
+                  to="/apps"
+                >
+                  Apps
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/installation">Installation</NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                      : ""
+                  }
+                  to="/installation"
+                >
+                  Installation
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -50,15 +77,42 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold">
+          <ul className="flex gap-5 font-semibold text-xl">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                    : ""
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/apps">Apps</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                    : ""
+                }
+                to="/apps"
+              >
+                Apps
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/installation">Installation</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text border-purple-500 "
+                    : ""
+                }
+                to="/installation"
+              >
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>

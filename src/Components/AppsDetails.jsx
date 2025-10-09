@@ -78,13 +78,13 @@ const AppsDetails = () => {
             <Link
               onClick={handleInstall}
               disabled={isInstall}
-              className={`btn w-1/3  mt-7 ${
+              className={`btn w-1/2  mt-7 ${
                 isInstall
-                  ? "bg-gray-200 text-black cursor-not-allowed"
-                  : "text-white bg-[#00D390]"
+                  ? "bg-gray-200 text-black cursor-not-allowed p-1 "
+                  : "text-white bg-[#00D390] p-1 "
               } `}
             >
-              {isInstall ? "Installed" : `(Install Now ${size} MB)`}
+              {isInstall ? "Installed" : `Install Now ( ${size} MB )`}
             </Link>
           </div>
         </div>
