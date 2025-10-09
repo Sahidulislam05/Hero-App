@@ -122,7 +122,7 @@ src/
 
 #### 💼 President, TPI Computer Club
 
-#### 💻 MERN Stack Developer | Passionate about modern web apps
+#### 💻 Frontend Web Developer | Passionate about modern web apps
 
 ### 📄 License
 
