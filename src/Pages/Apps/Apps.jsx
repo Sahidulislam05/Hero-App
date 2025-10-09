@@ -69,6 +69,8 @@ const Apps = () => {
         </div>
       )} */}
 
+        {/* All Apps Page Data Loading */}
+
         {searchLoading ? (
           <LoadingAnimation></LoadingAnimation>
         ) : searchedApp.length > 0 ? (
