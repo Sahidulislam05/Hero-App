@@ -4,8 +4,8 @@ import img from "../assets/App-Error.png";
 const AppError = () => {
   return (
     <div>
-      <div>
-        <div className="container mx-auto my-5">
+      <div className="bg-gray-100 pb-3">
+        <div className="container mx-auto py-5 ">
           <div className="flex flex-col justify-center items-center">
             <img src={img} alt="" />
             <h1 className="text-5xl font-semibold text-center my-3">
