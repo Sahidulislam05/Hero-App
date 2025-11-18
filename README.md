@@ -100,6 +100,25 @@ src/
 
 ---
 
+
+
+**Additional NPM Dependencies:**
+
+```json
+"dependencies": {
+  "axios": "^1.5.0",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.14.0",
+  "react-toastify": "^9.1.3",
+  "framer-motion": "^10.12.16",
+  "firebase": "^10.12.0",
+  "daisyui": "^3.2.7",
+  "tailwindcss": "^3.3.3",
+  "react-icons": "^4.11.0"
+}
+```
+
 ## 💡 Key Highlights
 
 #### ✨ Smooth navigation using React Router
